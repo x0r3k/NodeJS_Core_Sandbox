@@ -1,0 +1,16 @@
+{
+  "development": {
+    "connectionLimit": 10,
+    "host": "localhost",
+    "user": "test_user",
+    "password": "0000",
+    "database": "test_db"
+  },
+  "production": {
+    "connectionLimit": 10,
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "sakila"
+  }
+}
