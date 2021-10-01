@@ -7,7 +7,7 @@ const assert = require('assert');
 // }
 
 try {
-    assert.deepStrictEqual({a: 1, b: 2}, {b: 2, a: 1});
+    assert.deepStrictEqual({a: 1, b: 2}, {b: 3, a: 1});
 } catch (error) {
     console.log(error);
 }

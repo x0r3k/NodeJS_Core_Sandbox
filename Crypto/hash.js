@@ -2,11 +2,11 @@ const crypto = require("crypto")
 const bcrypt = require("bcryptjs")
 
 // Approach #1 (Built-in crypto module)
-let response = crypto.createHash("sha256")
-  .update("текст")
-  .digest('hex');
+// let response = crypto.createHash("sha256")
+//   .update("текст")
+//   .digest('hex');
 
-console.log(response);
+// console.log(response);
 
 // Approach #2 (Built-in crypto module)
 // const hash = crypto.createHash("sha256");
@@ -22,6 +22,8 @@ console.log(response);
 // hash.end();
 
 // Approach #3 (Bcryptjs module)
-var hash = bcrypt.hashSync("12345", 10);
-bcrypt.compareSync("B4c0/\/", hash); // true
-console.log(hash)
+// var hash = bcrypt.hashSync("12345", 10);
+// bcrypt.compareSync("B4c0/\/", hash); // true
+// console.log(hash);
+
+console.log(bcrypt.compareSync('0000', '$2a$10$EvSieDKZJI/ZMegtAjFzSOsgmtaxKhLPgzQbFN6uj8KklL1ta1zAa'));
